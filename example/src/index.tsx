@@ -4,16 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// import { CuteEmojiesConfirmContainer } from 'cute-emojies-confirm';
+import { CuteEmojiesConfirmContainer } from 'cute-emojies-confirm';
+
+import 'cute-emojies-confirm/lib/dist/index.css';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    {/* <CuteEmojiesConfirmContainer> */}
-      <App />
-    {/* </CuteEmojiesConfirmContainer> */}
+    <App />
+
+    <CuteEmojiesConfirmContainer />
   </React.StrictMode>
 );
 

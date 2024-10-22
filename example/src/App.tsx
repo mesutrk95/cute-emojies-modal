@@ -1,21 +1,28 @@
 import './App.css';
-// import { dialog as showDialog, useConfirm } from 'cute-emojies-confirm';
-import SayHello from 'cute-emojies-confirm';
+import { useDialog } from 'cute-emojies-confirm';
 
+
+const DialogBody = ({ close }: { close: any }) => {
+  return (
+    <>
+      <h1>Dialog Body</h1>
+      <div>
+        Okkkkk
+        <button onClick={() => close({ status: 'ok' })}>Ok</button>
+      </div>
+    </>
+  )
+}
 
 function App() {
-
-  // const confirm = useConfirm();
+  const dialog = useDialog();
 
   const onClickHandle = async () => {
-    // console.log(showDialog);
-    // await showDialog({ confirmation: 'Are you sure you want to delete this?', options: {} })
-
-    // confirm('Are you sure you want to delete this?')
+    const result = await dialog({ title: <h3>Are you sure you want to delete this?</h3>, body: DialogBody, variant: 'danger' })
+    console.log(result);
   }
   return (
     <div className="App">
-      <SayHello name="masoud"/>
       <button onClick={onClickHandle}>Click to show</button>
     </div>
   );
