@@ -4,20 +4,133 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
   display: flex;
   justify-content: center;
 
+  .cute-emojies-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #efeded;
+  }
+  .center-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   .modal-body {
+    text-align: center;
     background-color: white;
     padding: 20px;
-    border-radius: 10px;
-    margin-top: 100px;
-    width: 400px;
+    border-radius: 20px;
+    width: 250px;
     min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .title {
+      margin-bottom: 0;
+    }
+
+    .body {
+      color: #696976;
+    }
+
+    .btn {
+      font-size: 16px;
+      padding: 15px 25px;
+      border-radius: 40px;
+      border: none;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .emojie-container {
+      margin-top: -80px;
+    }
+  }
+}
+
+.orange {
+  .btn {
+    background-color: #9492ff;
+  }
+  .title {
+    color: #9492ff;
+  }
+}
+
+.emojies {
+  height: 120px;
+  &.emoji-8 {
+    .cls-1 {
+      fill: #5b0600;
+    }
+
+    .cls-2 {
+      fill: #8e1112;
+    }
+
+    .cls-3 {
+      fill: url(#Degradado_sin_nombre_109);
+    }
+
+    .cls-3,
+    .cls-4 {
+      fill-rule: evenodd;
+    }
+
+    .cls-5 {
+      clip-path: url(#clippath);
+    }
+
+    .cls-6 {
+      fill: url(#Degradado_sin_nombre_91);
+    }
+
+    .cls-4 {
+      fill: url(#Degradado_sin_nombre_109-2);
+    }
+  }
+
+  &.emoji-10 {
+    .cls-1 {
+      fill: #fff;
+    }
+
+    .cls-2 {
+      fill: none;
+      stroke: #5b0600;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 4px;
+    }
+
+    .cls-3 {
+      isolation: isolate;
+    }
+
+    .cls-4 {
+      fill: #18181e;
+    }
+
+    .cls-5 {
+      // mix - blend - mode: overlay;
+      opacity: 0.72;
+    }
+
+    .cls-6 {
+      fill: #161616;
+    }
+
+    .cls-7 {
+      fill: url(#Degradado_sin_nombre_91);
+    }
   }
 }

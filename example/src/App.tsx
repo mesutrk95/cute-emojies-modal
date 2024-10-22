@@ -18,9 +18,14 @@ function App() {
   const dialog = useDialog();
 
   const onClickHandle = async () => {
-    const result = await dialog({ title: <h3>Are you sure you want to delete this?</h3>, body: DialogBody, variant: 'danger' })
+    const result = await dialog({
+      title:  'Amazing!',
+      body: 'Congratulations on your promotion and 3 badges!', 
+      variant: 'orange'
+    })
     console.log(result);
   }
+
   return (
     <div className="App">
       <button onClick={onClickHandle}>Click to show</button>

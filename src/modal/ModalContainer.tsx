@@ -1,5 +1,5 @@
 import { useSyncExternalStore } from "react";
-import { modalsStore } from "./store"; 
+import { modalsStore } from "./store";
 
 export const CuteEmojiesConfirmContainer = () => {
   const currentModal = useSyncExternalStore(
@@ -7,9 +7,14 @@ export const CuteEmojiesConfirmContainer = () => {
     modalsStore.getSnapshot
   );
 
-  if(!currentModal) return null;
- 
+  if (!currentModal) return null;
+
   return <div className={'cute-emojies-modal-container'}>
-    {currentModal}
+    {currentModal && <div className="cute-emojies-modal-overlay"
+      onClick={() => modalsStore.setCurrentModal(null)}></div>}
+    <div className="center-box">
+
+      {currentModal}
+    </div>
   </div>;
 };

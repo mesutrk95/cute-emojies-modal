@@ -6,6 +6,6 @@ import { EmojieModal } from './EmojieModal'
 export const useDialog = () => {
     const { show } = useModal()
 
-    return ({ title, body, variant }: { title: JSX.Element | string, body: ComponentType<any> | string, variant: string }) =>
+    return ({ title, body, variant }: { title?: JSX.Element | string, body?: ComponentType<any> | string, variant?: string }) =>
         show(EmojieModal, { title, body, variant });
 }
