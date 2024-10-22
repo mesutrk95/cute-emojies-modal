@@ -89,7 +89,7 @@
         }
         &.right-2 {
           width: 5px;
-          height: 5px; 
+          height: 5px;
           right: -5%;
           top: 59%;
           background-color: #9290f4;
@@ -137,6 +137,36 @@
 
 .emojies {
   height: 120px;
+  svg {
+    height: 100%;
+  }
+
+  &.emoji-7 {
+    .cls-1 {
+      fill: #5b0600;
+    }
+
+    .cls-2 {
+      fill: #8e1112;
+    }
+
+    .cls-3 {
+      fill: none;
+      stroke: #000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 5px;
+    }
+
+    .cls-4 {
+      clip-path: url(#clippath);
+    }
+
+    .cls-5 {
+      fill: url(#Degradado_sin_nombre_91);
+    }
+  }
+
   &.emoji-8 {
     .cls-1 {
       fill: #5b0600;
@@ -165,6 +195,24 @@
 
     .cls-4 {
       fill: url(#Degradado_sin_nombre_109-2);
+    }
+  }
+
+  &.emoji-9 {
+    .cls-1 {
+      fill: #5b0600;
+    }
+
+    .cls-2 {
+      fill: #8e1112;
+    }
+
+    .cls-3 {
+      clip-path: url(#clippath);
+    }
+
+    .cls-4 {
+      fill: url(#Degradado_sin_nombre_91);
     }
   }
 

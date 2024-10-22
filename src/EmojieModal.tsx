@@ -1,6 +1,7 @@
 import React, { ComponentType, ReactNode } from 'react'
 import { Emoji8 } from './emojies/emoji-8';
 import { Star } from './emojies/star';
+import { Emoji10 } from './emojies/emoji-10';
 
 const getBody = (body?: ComponentType<any> | ReactNode | string) => {
 
@@ -35,7 +36,7 @@ export const EmojieModal = ({ title, body, variant, close }:
                 <div className='dot right-3'></div> 
                 <Star className="dot star-1" />
                 <Star className="dot star-2" />
-                <Emoji8 />
+                <Emoji10 />
             </div>
             {titleElement}
             {bodyElement}

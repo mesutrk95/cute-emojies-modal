@@ -3,21 +3,21 @@ import React from 'react'
 export const Emoji8 = () => {
     return (
         <div className='emojies emoji-8'>
-            <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 145 96.45" preserveAspectRatio="none" style={{height: '100%'}}>
+            <svg viewBox="0 0 145 96.45" preserveAspectRatio="none" >
                 <defs>
                     <linearGradient id="Degradado_sin_nombre_91" data-name="Degradado sin nombre 91" x1="31.08" y1="72.34" x2="114.62" y2="24.11" gradientTransform="translate(55.44 -37.39) rotate(45)" gradientUnits="userSpaceOnUse">
-                        <stop offset="0" stop-color="#ebb34d" />
-                        <stop offset=".03" stop-color="#ebb64d" />
-                        <stop offset=".18" stop-color="#eec04f" />
-                        <stop offset=".55" stop-color="#f0cc50" />
-                        <stop offset="1" stop-color="#f3d652" />
+                        <stop offset="0" stopColor="#ebb34d" />
+                        <stop offset=".03" stopColor="#ebb64d" />
+                        <stop offset=".18" stopColor="#eec04f" />
+                        <stop offset=".55" stopColor="#f0cc50" />
+                        <stop offset="1" stopColor="#f3d652" />
                     </linearGradient>
                     <clipPath id="clippath">
                         <path className="cls-1" d="M45.53,51.6s24.95-4.11,54.63,0c0,0,.95,24.31-27.31,24.31s-27.31-24.31-27.31-24.31Z" />
                     </clipPath>
                     <linearGradient id="Degradado_sin_nombre_109" data-name="Degradado sin nombre 109" x1="251.11" y1="538.08" x2="276.07" y2="538.08" gradientTransform="translate(-336.11 -424.85) rotate(-14.37)" gradientUnits="userSpaceOnUse">
-                        <stop offset="0" stop-color="#d2254d" />
-                        <stop offset="1" stop-color="#d65c4e" />
+                        <stop offset="0" stopColor="#d2254d" />
+                        <stop offset="1" stopColor="#d65c4e" />
                     </linearGradient>
                     <linearGradient id="Degradado_sin_nombre_109-2" data-name="Degradado sin nombre 109" x1="-3401.68" y1="-397.46" x2="-3376.72" y2="-397.46" gradientTransform="translate(-3289.38 -424.85) rotate(-165.63) scale(1 -1)" xlinkHref="#Degradado_sin_nombre_109" />
                 </defs>
