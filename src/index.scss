@@ -53,6 +53,75 @@
 
     .emojie-container {
       margin-top: -80px;
+      position: relative;
+
+      .dot {
+        border-radius: 100%;
+        position: absolute;
+
+        &.left-1 {
+          width: 10px;
+          height: 10px;
+          top: 10%;
+          left: -1%;
+          background-color: #9290f4;
+        }
+        &.left-2 {
+          width: 5px;
+          height: 5px;
+          top: 41%;
+          left: 8%;
+          background-color: #fad141;
+        }
+        &.left-3 {
+          width: 8px;
+          height: 8px;
+          top: 80%;
+          left: 10%;
+          background-color: #e7759f;
+        }
+        &.right-1 {
+          width: 10px;
+          height: 10px;
+          top: 22%;
+          right: 9%;
+          background-color: #f9cb1a;
+        }
+        &.right-2 {
+          width: 5px;
+          height: 5px; 
+          right: -5%;
+          top: 59%;
+          background-color: #9290f4;
+        }
+        &.right-3 {
+          width: 8px;
+          height: 8px;
+          top: 80%;
+          right: 10%;
+          background-color: #78d8af;
+        }
+
+        &.star-1 {
+          width: 10px;
+          height: 10px;
+          top: 62%;
+          left: -2%;
+          path {
+            fill: #78d8af;
+          }
+        }
+
+        &.star-2 {
+          width: 12px;
+          height: 12px;
+          top: 4%;
+          right: -2%;
+          path {
+            fill: #78d8af;
+          }
+        }
+      }
     }
   }
 }
