@@ -1,11 +1,12 @@
 .cute-emojies-modal-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   .cute-emojies-modal-overlay {
     position: absolute;
@@ -16,10 +17,6 @@
     background-color: #efeded;
   }
   .center-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   .modal-body {
     text-align: center;
