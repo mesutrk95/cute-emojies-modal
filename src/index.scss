@@ -137,6 +137,140 @@
   svg {
     height: 100%;
   }
+  &.emoji-1 {
+    .cls-1 {
+      fill: #5b0600;
+    }
+
+    .cls-2 {
+      fill: #8e1112;
+    }
+
+    .cls-3 {
+      fill: none;
+      stroke: #000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 5px;
+    }
+
+    .cls-4 {
+      clip-path: url(#clippath);
+    }
+
+    .cls-5 {
+      fill: url(#Degradado_sin_nombre_91);
+    }
+  }
+  &.emoji-2 {
+    .cls-1 {
+      stroke: #5b0600;
+      stroke-width: 4px;
+    }
+
+    .cls-1,
+    .cls-2 {
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .cls-2 {
+      stroke: #000;
+      stroke-width: 5px;
+    }
+
+    .cls-3 {
+      fill: url(#Degradado_sin_nombre_91);
+    }
+  }
+  &.emoji-3 {
+    .cls-1 {
+      stroke: #000;
+    }
+
+    .cls-1,
+    .cls-2 {
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 4px;
+    }
+
+    .cls-2 {
+      stroke: #5b0600;
+    }
+
+    .cls-3 {
+      fill: url(#Degradado_sin_nombre_136);
+    }
+
+    .cls-4 {
+      fill: url(#Degradado_sin_nombre_91);
+    }
+  }
+  &.emoji-4 {
+    .cls-1 {
+      opacity: 0.68;
+    }
+
+    .cls-2 {
+      stroke: #5b0600;
+      stroke-width: 4px;
+    }
+
+    .cls-2,
+    .cls-3 {
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .cls-3 {
+      stroke: #000;
+      stroke-width: 5px;
+    }
+
+    .cls-4 {
+      fill: url(#Degradado_sin_nombre_91);
+    }
+
+    .cls-5 {
+      fill: url(#Degradado_sin_nombre_128);
+    }
+  }
+  &.emoji-5 {
+    .cls-1 {
+      fill: none;
+      stroke: #5b0600;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 4px;
+    }
+
+    .cls-2 {
+      fill: url(#Degradado_sin_nombre_91);
+    }
+  }
+
+  &.emoji-6 {
+    .cls-1 {
+      fill: url(#Degradado_sin_nombre_109);
+      fill-rule: evenodd;
+    }
+
+    .cls-2 {
+      fill: none;
+      stroke: #5b0600;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 4px;
+    }
+
+    .cls-3 {
+      fill: url(#Degradado_sin_nombre_91);
+    }
+  }
 
   &.emoji-7 {
     .cls-1 {
