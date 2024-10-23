@@ -1,7 +1,6 @@
 import React, { ComponentType, ReactNode, useEffect, } from 'react'
-import { Emoji8 } from './emojies/emoji-8';
+import { Emoji } from './emojies';
 import { Star } from './emojies/star';
-import { Emoji10 } from './emojies/emoji-10';
 import { useSpring, animated, config } from "@react-spring/web";
 
 const getBody = (body?: ComponentType<any> | ReactNode | string) => {
@@ -25,12 +24,14 @@ export const EmojieModal = ({
     title,
     body,
     variant,
+    emoji,
     close,
 }: {
     title?: JSX.Element | string;
     body?: ComponentType<any> | string;
     variant?: string;
     close: (data?: any) => void;
+    emoji?: number | string
 }) => {
     const bodyElement = getBody(body);
     const titleElement = getTitle(title);
@@ -50,9 +51,8 @@ export const EmojieModal = ({
 
     return (
         <div className={`modal-body ${variant}`}>
-            {/* <div className="emojie-container"> */}
             <animated.div
-                className="emojie-container"
+                className="emoji-container"
                 style={{
                     ...emojiSpring,
                 }}
@@ -65,9 +65,8 @@ export const EmojieModal = ({
                 <div className='dot right-3'></div>
                 <Star className="dot star-1" />
                 <Star className="dot star-2" />
-                <Emoji8 />
+                <Emoji index={emoji || 10} />
             </animated.div>
-            {/* </div> */}
             {titleElement}
             {bodyElement}
 
