@@ -11,24 +11,19 @@
   ],
   "scripts": {
     "build": "yarn build:esm && yarn build:cjs && yarn css:dev",
+    "build:dev": "yarn build:esm && yarn css:dev",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs",
-    "build:styles": "rollup -c rollup.config.mjs  --debug",
     "css:prod": "sass --style compressed src/index.scss > lib/dist/index.min.css",
-    "css:dev": "sass --style expanded src/index.scss > lib/dist/index.css"
+    "css:dev": "sass --style expanded src/index.scss > lib/dist/index.css",
+    "dev": "nodemon --watch src --ext ts,tsx,scss --exec \"yarn build:dev\""
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^28.0.1",
-    "@rollup/plugin-node-resolve": "^15.3.0",
-    "@rollup/plugin-typescript": "^12.1.1",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
+    "nodemon": "^3.1.7",
     "postcss": "^8.4.47",
     "postcss-modules": "^6.0.0",
-    "rollup": "^4.24.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-scss": "^4.0.0",
     "sass": "^1.80.3",
     "tslib": "^2.8.0",
     "typescript": "^5.6.3"
@@ -36,5 +31,8 @@
   "peerDependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
+  },
+  "dependencies": {
+    "@react-spring/web": "^9.7.5"
   }
 }

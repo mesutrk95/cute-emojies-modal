@@ -21,7 +21,8 @@ function App() {
     const result = await dialog({
       title:  'Amazing!',
       body: 'Congratulations on your promotion and 3 badges!', 
-      variant: 'orange'
+      variant: 'yellow',
+      emoji: 10
     })
     console.log(result);
   }
