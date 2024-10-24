@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useSpring, animated, config } from "@react-spring/web";
+import { useSpring, animated, config, easings } from "@react-spring/web";
 import { useSyncExternalStore } from "react";
 import { modalsStore } from "./store";
 
@@ -48,11 +48,14 @@ export const CuteEmojiesConfirmContainer = () => {
     } else {
       // Animate out
       modalApi.start({
-        to: { transform: "translateY(-100%)", opacity: 0 }, 
+        to: { transform: "translateY(-100%) scale(80%)", opacity: 0 }, 
       });
       containerApi.start({
         opacity: 0,
-        delay: 300, 
+        config: { 
+          duration: 200,
+          easing: easings.easeInCubic, // Makes the closing speed up
+        },
       });
       // Container will be hidden after animation completes via onRest callback
     }

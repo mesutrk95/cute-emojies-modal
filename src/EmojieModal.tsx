@@ -1,7 +1,7 @@
 import React, { ComponentType, ReactNode, useEffect, } from 'react'
 import { Emoji } from './emojies';
 import { Star } from './emojies/star';
-import { useSpring, animated, config } from "@react-spring/web";
+import { useSpring, animated, config, easings } from "@react-spring/web";
 
 const getBody = (body?: ComponentType<any> | ReactNode | string) => {
     switch (typeof body) {
@@ -46,7 +46,7 @@ export const EmojieModal = ({
     useEffect(() => {
         emojiApi.start({
             to: { transform: "scale(100%)" },
-            config: { ...config.wobbly, duration: 200 },
+            config: { ...config.wobbly, easing: easings.easeOutBounce, duration: 200 },
             delay: 200
         });
     }, []);

@@ -8,18 +8,18 @@ export const Emoji4 = () => {
         <linearGradient id="Degradado_sin_nombre_91" data-name="Degradado sin nombre 91" x1="33.74"
           y1="103.24" x2="117.28" y2="55.01" gradientUnits="userSpaceOnUse"
           gradientTransform="matrix(1.383245, 0, 0, 1.383245, -31.315369, -42.448997)">
-          <stop offset="0" stop-color="#ebb34d" />
-          <stop offset="0.03" stop-color="#ebb64d" />
-          <stop offset="0.18" stop-color="#eec04f" />
-          <stop offset="0.55" stop-color="#f0cc50" />
-          <stop offset="1" stop-color="#f3d652" />
+          <stop offset="0" stopColor="#ebb34d" />
+          <stop offset="0.03" stopColor="#ebb64d" />
+          <stop offset="0.18" stopColor="#eec04f" />
+          <stop offset="0.55" stopColor="#f0cc50" />
+          <stop offset="1" stopColor="#f3d652" />
         </linearGradient>
         <linearGradient id="Degradado_sin_nombre_128" data-name="Degradado sin nombre 128" x1="41.78"
           y1="70.26" x2="41.78" y2="28.35" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#77aaf2" />
-          <stop offset="0.35" stop-color="#8ebaf3" />
-          <stop offset="0.74" stop-color="#a1c7f5" />
-          <stop offset="1" stop-color="#a9ccf6" />
+          <stop offset="0" stopColor="#77aaf2" />
+          <stop offset="0.35" stopColor="#8ebaf3" />
+          <stop offset="0.74" stopColor="#a1c7f5" />
+          <stop offset="1" stopColor="#a9ccf6" />
         </linearGradient>
       </defs>
       <g id="OBJECTS">
