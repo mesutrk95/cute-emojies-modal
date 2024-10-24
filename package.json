@@ -6,8 +6,12 @@
   "types": "./dist/esm/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mesutrk95/cute-emojies-modal"
+    "url": "https://github.com/mesutrk95/cute-emojies-modal.git"
   },
+  "engines": {
+    "node": ">=10"
+  },
+  "description": "A fun and customizable modal package for React, letting you easily add emoji-based confirmation dialogs to your app!",
   "keywords": [
     "react",
     "dialog",

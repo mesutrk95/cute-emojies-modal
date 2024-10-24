@@ -2,6 +2,8 @@
 
 A fun and customizable modal package for React, letting you easily add emoji-based confirmation dialogs to your app!
 
+Check out the [live demo](https://codesandbox.io/p/sandbox/cute-emojites-modal-example-l6m32v) of the modal in action.
+
 ## Installation
 
 You can install the package via **yarn** or **npm**:
@@ -67,3 +69,16 @@ function App() {
 export default App;
 
 ```
+
+## Available Variants
+The variant property controls the color scheme of the modal. You can choose from the following options:
+
+- 'mint-green'
+- 'orange'
+- 'light-purple'
+- 'purple'
+- 'light-blue'
+- 'yellow'
+
+## Available Emojis
+The emoji property allows you to choose which emoji to display in the modal. You can select a number between **1** and **10**.
