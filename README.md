@@ -39,17 +39,17 @@ root.render(
 );
 ```
 
-### Step 3: Use the Dialog in Your Components
-Now you can easily trigger modals in your components using the useDialog hook:
+### Step 3: Use the Modal in Your Components
+Now you can easily trigger modals in your components using the useCuteModal hook:
 
 ```typescript
-import { useDialog } from 'cute-emojies-modal';
+import { useCuteModal } from 'cute-emojies-modal';
 
 function App() {
-  const dialog = useDialog();
+  const modal = useCuteModal();
 
-  const onShow = async () => {
-    await dialog({
+  const onShowClick = async () => {
+    await modal({
       title: 'Lovely',
       body: 'Woho! Now you have 3 new badges!',
       variant: 'yellow',
@@ -59,7 +59,7 @@ function App() {
 
   return (
     <div>
-      <button onClick={onShow}>Show Dialog</button>
+      <button onClick={onShowClick}>Show Modal</button>
     </div>
   );
 }

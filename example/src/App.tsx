@@ -1,12 +1,11 @@
-import { DialogEmoji, DialogVariants } from '../../dist/esm/dialog';
-import { useDialog } from 'cute-emojies-modal';
+import { useCuteModal, ModalEmoji, ModalVariants} from 'cute-emojies-modal';
 
 interface ModalProps {
   title: string,
   body: string,
   buttonText?: string,
-  variant: DialogVariants,
-  emoji: DialogEmoji
+  variant: ModalVariants,
+  emoji: ModalEmoji
 }
 
 const BUTTONS: ModalProps[] = [
@@ -48,10 +47,10 @@ const BUTTONS: ModalProps[] = [
   }
 ]
 
-const DialogBody = ({ close }: { close: any }) => {
+const ModalBody = ({ close }: { close: any }) => {
   return (
     <>
-      <h1>Dialog Body</h1>
+      <h1>Body</h1>
       <div>
         <button onClick={() => close({ status: 'ok' })}>Ok</button>
       </div>
@@ -60,10 +59,10 @@ const DialogBody = ({ close }: { close: any }) => {
 }
 
 function App() {
-  const dialog = useDialog();
+  const modal = useCuteModal();
 
   const onShow = async (modalProps: ModalProps) => {
-    const result = await dialog(modalProps)
+    const result = await modal(modalProps)
     console.log(result);
   }
 
