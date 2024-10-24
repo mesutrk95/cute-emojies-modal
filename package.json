@@ -41,8 +41,8 @@
     "build:dev": "yarn build:esm && yarn css:dev",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "css:dev": "mkdir -p dist && sass --style expanded src/index.scss > dist/index.css",
-    "css:prod": "mkdir -p dist && sass --style compressed src/index.scss > dist/index.min.css",
+    "css:dev": "sass --style expanded src/index.scss > dist/index.css",
+    "css:prod": "sass --style compressed src/index.scss > dist/index.min.css",
     "dev": "nodemon --watch src --ext ts,tsx,scss --exec \"yarn build:dev\""
   },
   "devDependencies": {

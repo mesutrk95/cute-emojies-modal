@@ -13,7 +13,7 @@ export const CuteEmojiesConfirmContainer = () => {
 
   // Animation for the modal
   const [modalSpring, modalApi] = useSpring(() => ({
-    from: { transform: "translateY(-100%)", opacity: 0 },
+    from: { transform: "translateY(-100%)" },
     config: { ...config.gentle },
   }));
 
@@ -21,7 +21,7 @@ export const CuteEmojiesConfirmContainer = () => {
   const [containerSpring, containerApi] = useSpring(
     () => ({
       from: { opacity: 0 },
-      config: { ...config.gentle },
+      config: { ...config.gentle, duration: 200 },
       onRest: () => {
         if (!currentModal) {
           setIsVisible(false);
@@ -35,12 +35,12 @@ export const CuteEmojiesConfirmContainer = () => {
     if (currentModal) {
       // Show container immediately when modal appears
       setIsVisible(true);
-      setLastModal(currentModal)
+      setLastModal(currentModal);
       // Animate in
       modalApi.start({
-        from: { transform: "translateY(-100%)", opacity: 0 },
-        to: { transform: "translateY(0%)", opacity: 1 },
-        config: { tension: 280, friction: 20,  },
+        from: { transform: "translateY(-100%)" },
+        to: { transform: "translateY(0%)" },
+        config: { tension: 280, friction: 20 },
       });
       containerApi.start({
         opacity: 1,
@@ -48,11 +48,11 @@ export const CuteEmojiesConfirmContainer = () => {
     } else {
       // Animate out
       modalApi.start({
-        to: { transform: "translateY(-100%) scale(80%)", opacity: 0 }, 
+        to: { transform: "translateY(-100%) scale(80%)" },
       });
       containerApi.start({
         opacity: 0,
-        config: { 
+        config: {
           duration: 200,
           easing: easings.easeInCubic, // Makes the closing speed up
         },
@@ -70,11 +70,11 @@ export const CuteEmojiesConfirmContainer = () => {
         ...containerSpring,
       }}
     >
-      <animated.div
+      <div
         className="cute-emojies-modal-overlay"
-        style={{
-          ...containerSpring,
-        }}
+        // style={{
+        //   ...containerSpring,
+        // }}
         onClick={() => modalsStore.setCurrentModal(null)}
       />
       <animated.div
