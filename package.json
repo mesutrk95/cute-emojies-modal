@@ -1,21 +1,21 @@
 {
-  "name": "cute-emojies-confirm",
-  "version": "1.0.0",
-  "main": "./lib/cjs/index.js",
-  "module": "./lib/esm/index.js",
-  "types": "./lib/esm/index.d.ts",
+  "name": "cute-emojies-modal",
+  "version": "1.0.2",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "author": "Masoud Rezakhanlou <masoud.rk95@gmail.com>",
   "license": "MIT",
   "files": [
-    "/lib"
+    "/dist"
   ],
   "scripts": {
-    "build": "yarn build:esm && yarn build:cjs && yarn css:dev",
+    "build": "yarn build:esm && yarn build:cjs && yarn css:prod",
     "build:dev": "yarn build:esm && yarn css:dev",
     "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
-    "css:prod": "sass --style compressed src/index.scss > lib/dist/index.min.css",
-    "css:dev": "sass --style expanded src/index.scss > lib/dist/index.css",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "css:dev": "mkdir -p dist && sass --style expanded src/index.scss > dist/index.css",
+    "css:prod": "mkdir -p dist && sass --style compressed src/index.scss > dist/index.min.css",
     "dev": "nodemon --watch src --ext ts,tsx,scss --exec \"yarn build:dev\""
   },
   "devDependencies": {

@@ -10,12 +10,13 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
+    "bootstrap": "^5.3.3",
+    "cute-emojies-modal": "link:..",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "typescript": "^4.4.2",
-    "web-vitals": "^2.1.0",
-    "cute-emojies-confirm": "link:.."
+    "web-vitals": "^2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

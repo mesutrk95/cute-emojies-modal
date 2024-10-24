@@ -23,12 +23,14 @@ const getTitle = (title?: ReactNode | string) => {
 export const EmojieModal = ({
     title,
     body,
+    buttonText,
     variant,
     emoji,
     close,
 }: {
     title?: JSX.Element | string;
     body?: ComponentType<any> | string;
+    buttonText?: string,
     variant?: string;
     close: (data?: any) => void;
     emoji?: number | string
@@ -72,7 +74,7 @@ export const EmojieModal = ({
 
             <br />
             <button className="btn" onClick={() => close()}>
-                Nice!
+                {buttonText || 'Close'}
             </button>
         </div>
     );
