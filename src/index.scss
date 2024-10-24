@@ -1,10 +1,10 @@
 :root {
-  --mint-green: #76dbab;
-  --orange: #ef9d62;
-  --light-purple: #9492ff;
-  --purple: #cb8eff;
-  --light-blue: #5fc9ff;
-  --yellow: #f8c52f;
+  --cute-emoji-mint-green: #76dbab;
+  --cute-emoji-orange: #ef9d62;
+  --cute-emoji-light-purple: #9492ff;
+  --cute-emoji-purple: #cb8eff;
+  --cute-emoji-light-blue: #5fc9ff;
+  --cute-emoji-yellow: #f8c52f;
 }
 
 .cute-emojies-modal-container {
@@ -130,59 +130,59 @@
       }
     }
   }
-}
 
-.mint-green {
-  .btn {
-    background-color: var(--mint-green);
+  .mint-green {
+    .btn {
+      background-color: var(--cute-emoji-mint-green);
+    }
+    .title {
+      color: var(--cute-emoji-mint-green);
+    }
   }
-  .title {
-    color: var(--mint-green);
-  }
-}
 
-.orange {
-  .btn {
-    background-color: var(--orange);
+  .orange {
+    .btn {
+      background-color: var(--cute-emoji-orange);
+    }
+    .title {
+      color: var(--cute-emoji-orange);
+    }
   }
-  .title {
-    color: var(--orange);
-  }
-}
 
-.light-purple {
-  .btn {
-    background-color: var(--light-purple);
+  .light-purple {
+    .btn {
+      background-color: var(--cute-emoji-light-purple);
+    }
+    .title {
+      color: var(--cute-emoji-light-purple);
+    }
   }
-  .title {
-    color: var(--light-purple);
-  }
-}
 
-.purple {
-  .btn {
-    background-color: var(--purple);
+  .purple {
+    .btn {
+      background-color: var(--cute-emoji-purple);
+    }
+    .title {
+      color: var(--cute-emoji-purple);
+    }
   }
-  .title {
-    color: var(--purple);
-  }
-}
 
-.light-blue {
-  .btn {
-    background-color: var(--light-blue);
+  .light-blue {
+    .btn {
+      background-color: var(--cute-emoji-light-blue);
+    }
+    .title {
+      color: var(--cute-emoji-light-blue);
+    }
   }
-  .title {
-    color: var(--light-blue);
-  }
-}
 
-.yellow {
-  .btn {
-    background-color: var(--yellow);
-  }
-  .title {
-    color: var(--yellow);
+  .yellow {
+    .btn {
+      background-color: var(--cute-emoji-yellow);
+    }
+    .title {
+      color: var(--cute-emoji-yellow);
+    }
   }
 }
 
