@@ -4,7 +4,7 @@ import React from 'react'
 export const Emoji2 = () => {
   return (
     <div className='emojies emoji-2'>
-      <svg id="Layer_2" data-name="Layer 2" viewBox="0 0 145 96.45" preserveAspectRatio='none'>
+      <svg id="Layer_2" data-name="Layer 2" viewBox="0 0 145 96.45" >
         <defs>
           <linearGradient id="Degradado_sin_nombre_91" data-name="Degradado sin nombre 91" x1="31.08" y1="72.34" x2="114.62" y2="24.11" gradientUnits="userSpaceOnUse">
             <stop offset="0" stopColor="#ebb34d" />

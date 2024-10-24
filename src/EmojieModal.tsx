@@ -14,7 +14,7 @@ const getBody = (body?: ComponentType<any> | ReactNode | string) => {
 const getTitle = (title?: ReactNode | string) => {
     switch (typeof title) {
         case "string":
-            return <h2 className="title">{title}</h2>;
+            return <h5 className="title">{title}</h5>;
         default:
             return title;
     }
@@ -71,8 +71,6 @@ export const EmojieModal = ({
             </animated.div>
             {titleElement}
             {bodyElement}
-
-            <br />
             <button className="btn" onClick={() => close()}>
                 {buttonText || 'Close'}
             </button>

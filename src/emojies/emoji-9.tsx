@@ -3,7 +3,7 @@ import React from 'react'
 export const Emoji9 = () => {
   return (
     <div className='emojies emoji-9'>
-      <svg viewBox="0 0 145 96.45" preserveAspectRatio="none" >
+      <svg viewBox="0 0 145 96.45"  >
         <defs>
           <linearGradient id="Degradado_sin_nombre_91" data-name="Degradado sin nombre 91" x1="30.74" y1="72.34" x2="114.28" y2="24.11" gradientTransform="translate(103.17 -33.28) rotate(76.99)" gradientUnits="userSpaceOnUse">
             <stop offset="0" stopColor="#ebb34d" />

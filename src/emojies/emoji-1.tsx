@@ -4,7 +4,7 @@ import React from 'react'
 export const Emoji1 = () => {
   return (
     <div className='emojies emoji-1'>
-      <svg id="Layer_2" data-name="Layer 2" viewBox="0 0 145 98.81" preserveAspectRatio='none'>
+      <svg id="Layer_2" data-name="Layer 2" viewBox="0 0 145 98.81" >
         <defs>
           <style>
           </style>

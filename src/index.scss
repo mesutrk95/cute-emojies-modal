@@ -30,9 +30,9 @@
   .modal-body {
     text-align: center;
     background-color: white;
-    padding: 20px;
+    padding: 20px 30px;
     border-radius: 20px;
-    width: 250px;
+    width: 290px;
     min-height: 200px;
     display: flex;
     flex-direction: column;
@@ -41,24 +41,26 @@
 
     .title {
       margin-bottom: 0;
+      margin-top: 20px;
     }
 
     .body {
-      color: #696976;
+      color: #c4cad3;
     }
 
     .btn {
       font-size: 16px;
-      padding: 15px 25px;
+      padding: 10px 30px;
       border-radius: 40px;
       border: none;
       color: white;
       font-weight: 600;
+      margin-top: 10px;
       cursor: pointer;
     }
 
     .emoji-container {
-      margin-top: -80px;
+      margin-top: -70px;
       position: relative;
 
       .dot {
@@ -68,43 +70,43 @@
         &.left-1 {
           width: 10px;
           height: 10px;
-          top: 10%;
-          left: -1%;
+          top: 7%;
+          left: -16%;
           background-color: #9290f4;
         }
         &.left-2 {
           width: 5px;
           height: 5px;
           top: 41%;
-          left: 8%;
+          left: -6%;
           background-color: #fad141;
         }
         &.left-3 {
           width: 8px;
           height: 8px;
-          top: 80%;
-          left: 10%;
+          top: 87%;
+          left: -8%;
           background-color: #e7759f;
         }
         &.right-1 {
-          width: 10px;
-          height: 10px;
-          top: 22%;
-          right: 9%;
-          background-color: #f9cb1a;
+          width: 6px;
+          height: 6px;
+          top: 30%;
+          right: -13%;
+          background-color: #e7759f;
         }
         &.right-2 {
-          width: 5px;
-          height: 5px;
-          right: -5%;
-          top: 59%;
+          width: 10px;
+          height: 10px;
+          right: -23%;
+          top: 66%;
           background-color: #9290f4;
         }
         &.right-3 {
-          width: 8px;
-          height: 8px;
-          top: 80%;
-          right: 10%;
+          width: 6px;
+          height: 6px;
+          top: 90%;
+          right: -3%;
           background-color: #78d8af;
         }
 
@@ -112,7 +114,7 @@
           width: 10px;
           height: 10px;
           top: 62%;
-          left: -2%;
+          left: -34%;
           path {
             fill: #78d8af;
           }
@@ -122,7 +124,7 @@
           width: 12px;
           height: 12px;
           top: 4%;
-          right: -2%;
+          right: -32%;
           path {
             fill: #78d8af;
           }
@@ -187,7 +189,11 @@
 }
 
 .emojies {
-  height: 120px;
+  height: 100px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+
   svg {
     height: 100%;
   }

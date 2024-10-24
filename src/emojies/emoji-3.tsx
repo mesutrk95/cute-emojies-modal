@@ -3,7 +3,7 @@
  export const Emoji3 = () => {
    return (
     <div className='emojies emoji-3'>
-     <svg id="Layer_2" data-name="Layer 2" viewBox="0 0 145 105.64" preserveAspectRatio='none'>
+     <svg id="Layer_2" data-name="Layer 2" viewBox="0 0 145 105.64" >
        <defs> 
          <linearGradient id="Degradado_sin_nombre_91" data-name="Degradado sin nombre 91" x1="30.66" y1="72.34" x2="114.2" y2="24.11" gradientUnits="userSpaceOnUse">
            <stop offset="0" stopColor="#ebb34d"/>
