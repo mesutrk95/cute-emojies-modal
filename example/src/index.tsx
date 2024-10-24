@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
-import { CuteEmojiesConfirmContainer } from 'cute-emojies-confirm';
+import { CuteEmojiesConfirmContainer } from 'cute-emojies-modal';
 
-import 'cute-emojies-confirm/dist/index.css';
+import 'cute-emojies-modal/dist/index.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 

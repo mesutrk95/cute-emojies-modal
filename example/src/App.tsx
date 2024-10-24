@@ -1,5 +1,5 @@
 import { DialogEmoji, DialogVariants } from '../../dist/esm/dialog';
-import { useDialog } from 'cute-emojies-confirm';
+import { useDialog } from 'cute-emojies-modal';
 
 interface ModalProps {
   title: string,
