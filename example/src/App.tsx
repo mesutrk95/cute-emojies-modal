@@ -53,16 +53,16 @@ const BUTTONS: ModalProps[] = [
   }
 ]
 
-const ModalBody = ({ close }: { close: any }) => {
-  return (
-    <>
-      <h1>Body</h1>
-      <div>
-        <button onClick={() => close({ status: 'ok' })}>Ok</button>
-      </div>
-    </>
-  )
-}
+// const ModalBody = ({ close }: { close: any }) => {
+//   return (
+//     <>
+//       <h1>Body</h1>
+//       <div>
+//         <button onClick={() => close({ status: 'ok' })}>Ok</button>
+//       </div>
+//     </>
+//   )
+// }
 
 function App() {
   const modal = useCuteModal();
