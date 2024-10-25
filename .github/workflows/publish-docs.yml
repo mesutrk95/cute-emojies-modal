@@ -37,7 +37,12 @@ jobs:
           cache: 'yarn'
 
       - name: Install dependencies
-        run: yarn --cwd ./example install --frozen-lockfile
+        run: |
+          yarn install --frozen-lockfile
+          yarn --cwd ./example install --frozen-lockfile
+
+      - name: Build package
+        run: yarn build
 
       - name: Build example project
         run: yarn --cwd ./example build
