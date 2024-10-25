@@ -1,4 +1,4 @@
-import React, { ComponentType, ReactNode, useEffect } from "react";
+import React, { ComponentType, ReactNode } from "react";
 import { Emoji } from "./emojies";
 import { Star } from "./emojies/star";
 import { useSpring, animated, config, easings } from "@react-spring/web";

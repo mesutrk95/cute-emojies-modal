@@ -1,2 +1,2 @@
-export { CuteEmojiesConfirmContainer } from "./modal/ModalContainer";
+export { Container as CuteEmojiesConfirmContainer } from "./Container";
 export { useCuteModal, ModalVariants, ModalEmoji, ModalProps } from "./useCuteModal";

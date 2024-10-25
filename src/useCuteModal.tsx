@@ -1,6 +1,6 @@
 
 import { ComponentType } from 'react'
-import { useModal } from './modal/useModal'
+import { useModal } from 'react-modal-pop'
 import { EmojieModal } from './EmojieModal'
 
 export type ModalVariants =
