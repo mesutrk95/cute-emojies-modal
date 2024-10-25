@@ -43,7 +43,8 @@
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "css:dev": "mkdir -p dist && sass --style expanded src/index.scss > dist/index.css",
     "css:prod": "mkdir -p dist && sass --style compressed src/index.scss > dist/index.min.css",
-    "dev": "nodemon --watch src --ext ts,tsx,scss --exec \"yarn build:dev\""
+    "dev": "nodemon --watch src --ext ts,tsx,scss --exec \"yarn build:dev\"",
+    "publish": "yarn --cwd ./example build"
   },
   "devDependencies": {
     "@types/react": "^18.3.11",
