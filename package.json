@@ -1,9 +1,17 @@
 {
   "name": "cute-emojies-modal",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mesutrk95/cute-emojies-modal.git"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "description": "A fun and customizable modal package for React, letting you easily add emoji-based confirmation dialogs to your app!",
   "keywords": [
     "react",
     "dialog",
@@ -41,10 +49,9 @@
     "build:dev": "yarn build:esm && yarn css:dev",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "css:dev": "mkdir -p dist && sass --style expanded src/index.scss > dist/index.css",
-    "css:prod": "mkdir -p dist && sass --style compressed src/index.scss > dist/index.min.css",
-    "dev": "nodemon --watch src --ext ts,tsx,scss --exec \"yarn build:dev\"",
-    "publish": "yarn --cwd ./example build"
+    "css:dev": "sass --style expanded src/index.scss > dist/index.css",
+    "css:prod": "sass --style compressed src/index.scss > dist/index.min.css",
+    "dev": "nodemon --watch src --ext ts,tsx,scss --exec \"yarn build:dev\""
   },
   "devDependencies": {
     "@types/react": "^18.3.11",
