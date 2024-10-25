@@ -3,7 +3,9 @@ import { Emoji } from "./emojies";
 import { Star } from "./emojies/star";
 import { useSpring, animated, config, easings } from "@react-spring/web";
 
-const getBody = (body?: ComponentType<any> | ReactNode | string) => {
+const getBody = (
+    body?: ComponentType<any> | ReactNode | string, 
+    close?: (data?: any) => void) => {
   switch (typeof body) {
     case "string":
       return <p className="body">{body}</p>;
@@ -35,7 +37,7 @@ export const EmojieModal = ({
   close: (data?: any) => void;
   emoji?: number | string;
 }) => {
-  const bodyElement = getBody(body);
+  const bodyElement = getBody(body, close);
   const titleElement = getTitle(title);
 
   // // Animation for the modal

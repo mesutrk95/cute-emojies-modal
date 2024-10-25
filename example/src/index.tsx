@@ -5,7 +5,7 @@ import App from './App';
 
 import { CuteEmojiesConfirmContainer } from 'cute-emojies-modal';
 
-import 'cute-emojies-modal/dist/index.min.css';
+import 'cute-emojies-modal/dist/index.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
